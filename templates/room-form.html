@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <input name="name"  type="text" placeholder="Enter Room Name">
+        <button type="submit">create room</button>
+    </form>
+{% endblock content %}
+    

@@ -4,6 +4,9 @@
 {% block content %}
 
 <h1>room template</h1>
+<span>@{{room.host.username}}</span>
 <h3>{{room.name}}</h3>
+<p>{{room.description}} </p>
+<h5>{{room.topic.name}} </h5>
 
 {% endblock content %}
