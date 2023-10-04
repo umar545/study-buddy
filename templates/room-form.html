@@ -2,9 +2,10 @@
 
 {% block content %}
     <form action="" method="post">
+        <h1>room form</h1>
         {% csrf_token %}
-        <input name="name"  type="text" placeholder="Enter Room Name">
-        <button type="submit">create room</button>
+        {{form.as_p}}
+       <br> <button type="submit">create room</button>
     </form>
 {% endblock content %}
     

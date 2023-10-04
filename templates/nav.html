@@ -1,5 +1,7 @@
-<nav>
-  <a href="{% url 'home' %}"> home </a>
-  <a href="{% url 'room' '1' %}"> room </a>
-  <a href=""> blogs </a>
-</nav>
+<a href="/">
+  <h1>logo</h1>
+</a>
+<form action="{% url 'home' %}" method="GET" >
+  <input type="text" name="q" placeholder="Search Rooms...">
+</form>
+<a href="{% url 'login' %}">LOGIN</a>
